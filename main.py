@@ -1,8 +1,7 @@
 from PyPDF2 import PdfMerger
+import glob
 
-pdfs = [
-    # 'your-pdf-name.pdf', 
-]
+pdfs = glob.glob('docs/*.pdf')
 
 merger = PdfMerger()
 
